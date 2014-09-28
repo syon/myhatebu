@@ -31,10 +31,12 @@
 	font-size: 11px;
 	padding: 0 0 0 2px;
 }
-.entry-list .date {
+.entry-list .sub {
   color: #bbb;
   font-size: 11px;
-  padding: 0 6px;
+}
+.entry-list .sub span {
+  padding-right: 6px;
 }
 a {
   color: #007cc7;/*#008fde;*/

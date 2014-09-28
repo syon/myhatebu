@@ -13,7 +13,11 @@ table.entry-list.table.table-condensed
             | #{e.users}
             span.suffix users
       td
-        a href="#{e.url}"
-          = e.title
-        span.date
-          = e.date
+        .title
+          a href="#{e.url}"
+            = e.title
+        .sub
+          span.date
+            = e.date
+          span.domain
+            = e.domain
