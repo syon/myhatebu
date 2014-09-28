@@ -6,11 +6,27 @@ html
     title = yield_content :title
 
     link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"
+    link rel="stylesheet" href="/css/app.css"
     script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"
     script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"
 
   body
 
+    nav.navbar.navbar-default role="navigation"
+      .container
+        .container-fluid
+          .navbar-header
+            a.navbar-brand href="#"
+              span.glyphicon.glyphicon-bookmark
+              span.appname Myはてブ
+
     .container
 
       == yield
+
+    footer
+      .container
+        .credit.text-center
+          span
+            | Respect for
+            a href="http://b.hatena.ne.jp/" はてなブックマーク

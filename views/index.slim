@@ -1,16 +1,17 @@
-- content_for :title do "This is :index title" end
+- content_for :title do "Myはてブ" end
 
-h1.text-center = @say
-
-table.table.table-condensed
-  tr
-    th users
-    th title
-
+table.entry-list.table.table-condensed
   - @hotentries.each do |e|
     tr
       td.text-right
-        = e.users
+        - if e.users < 10
+          span.users.U10
+            | #{e.users}
+            span.suffix users
+        - else
+          span.users.O10
+            | #{e.users}
+            span.suffix users
       td
         a href="#{e.url}"
           = e.title
