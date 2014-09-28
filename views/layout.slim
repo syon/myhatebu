@@ -29,13 +29,7 @@ html
 
   body
 
-    nav.navbar.navbar-default role="navigation"
-      .container
-        .container-fluid
-          .navbar-header
-            a.navbar-brand href="#"
-              span.glyphicon.glyphicon-bookmark
-              span.appname Myはてブ
+    == slim :_navbar
 
     .container
 
@@ -47,3 +41,5 @@ html
           span
             | Respect for
             a href="http://b.hatena.ne.jp/" はてなブックマーク
+
+    script src="/js/app.js"

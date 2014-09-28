@@ -11,6 +11,10 @@
 .navbar .appname {
   padding-left: 45px;
 }
+.navbar .settings {
+  padding: 8px;
+  color: #008fde;
+}
 .entry-list.table>tbody>tr>td {
   border: 0;
 }
@@ -32,6 +36,7 @@
 	padding: 0 0 0 2px;
 }
 .entry-list .sub {
+	display: none;
   color: #bbb;
   font-size: 11px;
 }
