@@ -1,0 +1,16 @@
+- content_for :title do "This is :index title" end
+
+h1.text-center = @say
+
+table.table.table-condensed
+  tr
+    th users
+    th title
+
+  - @hotentries.each do |e|
+    tr
+      td.text-right
+        = e.users
+      td
+        a href="#{e.url}"
+          = e.title
