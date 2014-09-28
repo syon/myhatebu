@@ -27,9 +27,14 @@
   background-color: #ffe6e6;/*#ffd9d9;/*#ffcbcb;*/
   color: #ff0707;
 }
-.entry-list .suffix {
+.entry-list .users .suffix {
 	font-size: 11px;
 	padding: 0 0 0 2px;
+}
+.entry-list .date {
+  color: #bbb;
+  font-size: 11px;
+  padding: 0 6px;
 }
 a {
   color: #007cc7;/*#008fde;*/
