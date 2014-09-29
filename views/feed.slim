@@ -16,7 +16,6 @@ feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja"
       summary
         | #{e.desc}
         br
-        a href="http://b.hatena.ne.jp/entry/#{e.url.match(%r{https?://(.*?/.*)})[1]}"
-          img src="http://myhatebu.herokuapp.com/img/B.gif"
-        br
-        iframe src="http://b.hatena.ne.jp/entry/#{e.url.match(%r{https?://(.*?/.*)})[1]}" title="B! (#{e.users} users)"
+        hr
+        h4 B! :: #{e.users} users
+        iframe src="http://b.hatena.ne.jp/entry/#{e.url.match(%r{https?://(.*?/.*)})[1]}"
