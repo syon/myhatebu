@@ -1,6 +1,6 @@
 feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja"
   
-  title ■ Myはてブ
+  title ◆Myはてブ
   link href="http://myhatebu.herokuapp.com/" /
   updated #{@updated}
   author
@@ -17,5 +17,5 @@ feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja"
         | #{e.desc}
         br
         hr
-        h4 B! :: #{e.users} users
+        h4 B!  #{e.users} users
         iframe src="http://b.hatena.ne.jp/entry/#{e.url.match(%r{https?://(.*?/.*)})[1]}"

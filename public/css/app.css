@@ -18,22 +18,26 @@
 .entry-list.table>tbody>tr>td {
   border: 0;
 }
-.entry-list .users {
+.entry-list .users a {
+  color: #ff0707;
+}
+.entry-list .users .U10,
+.entry-list .users .O10 {
 	font-size: 13px;
 	font-weight: bold;
 	padding: 0 1px 0 2px;
 }
-.entry-list .users.U10 {
+.entry-list .users .U10 {
   background-color: #fff3f3;
   color: #ff8280;
 }
-.entry-list .users.O10 {
+.entry-list .users .O10 {
   background-color: #ffe6e6;/*#ffd9d9;/*#ffcbcb;*/
   color: #ff0707;
 }
 .entry-list .users .suffix {
 	font-size: 11px;
-	padding: 0 0 0 2px;
+	padding: 0;
 }
 .entry-list .sub {
 	display: none;
